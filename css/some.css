@@ -1,0 +1,58 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables */
+:root {
+    --color: red;
+    --titleWidth: 500px;
+    --main-font-size: 16px;
+}
+
+body {
+    font-size: var(--main-font-size);
+}
+
+h1 {
+    font-size: calc(var(--main-font-size) * 2);
+    height: calc(100px - 2em);
+    margin-bottom: calc(var(--main-font-size) * 1.5)
+}
+
+div {
+    color: var(--color);
+}
+
+a {
+    display: flex;
+}
+
+input {
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.box {
+    opacity: 0.5;
+}
+
+@each $icon in foo, bar, baz {
+    .icon-$(icon) {
+        background: url('icons/$(icon).png');
+    }
+}
+
+@for $k from 1 to 3 {
+    .b-$k { width: $(k)px; }
+}
+
+phone {
+    &_title {
+        width: var(--titleWidth);
+        @media (max-width: 500px) {
+            width: auto;
+        }
+        body.is_dark & {
+            color: white;
+        }
+    }
+    img {
+        display: block;
+    }
+}

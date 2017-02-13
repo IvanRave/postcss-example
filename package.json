@@ -1,0 +1,23 @@
+{
+  "name": "postcss-example",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss --config options.json -o main.css css/*.css"
+  },
+  "author": "IvanRave",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "6.x",
+    "postcss-calc": "5.x",
+    "postcss-cli": "2.x",
+    "postcss-custom-properties": "5.x",
+    "postcss-each": "0.x",
+    "postcss-for": "2.x",
+    "postcss-nested": "1.x",
+    "postcss-reporter": "3.x"
+  },
+  "browserslist": [
+    "> 1%"
+  ]
+}

@@ -1,0 +1,72 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables */
+
+body {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    height: calc(100px - 2em);
+    margin-bottom: 24px
+}
+
+div {
+    color: red;
+}
+
+a {
+    display: -webkit-box;
+    display: flex;
+}
+
+input {
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.box {
+    opacity: 0.5;
+}
+
+.icon-foo {
+    background: url('icons/foo.png');
+}
+
+.icon-bar {
+    background: url('icons/bar.png');
+}
+
+.icon-baz {
+    background: url('icons/baz.png');
+}
+
+.b-1 {
+    width: 1px;
+}
+
+.b-2 {
+    width: 2px;
+}
+
+.b-3 {
+    width: 3px;
+}
+
+phone_title {
+    width: 500px;
+}
+
+@media (max-width: 500px) {
+
+    phone_title {
+        width: auto;
+    }
+}
+
+body.is_dark phone_title {
+    color: white;
+}
+
+phone img {
+    display: block;
+}

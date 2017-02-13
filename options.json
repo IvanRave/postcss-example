@@ -1,0 +1,14 @@
+{
+  "use": [
+    "autoprefixer",
+    "postcss-each",
+    "postcss-for",
+    "postcss-nested",
+    "postcss-custom-properties",
+    "postcss-calc",
+    "postcss-reporter"
+  ],
+  "postcss-calc": {
+    "warnWhenCannotResolve": true
+  }
+}

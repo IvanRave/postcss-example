@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "build": "postcss --config options.json -o main.css css/*.css"
+    "build": "postcss --config postcss-config.json -o main.css css/*.css"
   },
   "author": "IvanRave",
   "license": "MIT",
